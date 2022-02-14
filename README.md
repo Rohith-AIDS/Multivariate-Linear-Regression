@@ -1,6 +1,6 @@
-# command-line-arguments-to-count-word
+# Implementation of Multivariate-Linear-Regression
 ## AIM:
-To write a python program for getting the word count from the contents of a file using command line arguments.
+To write a python program to implement multivariate linear regression and predict the output.
 ## EQUIPEMENT'S REQUIRED: 
 PC
 Anaconda - Python 3.7
@@ -37,4 +37,4 @@ print("Predicted CO2 emission based on weight and volume:",predictedCO2)
 
 
 ## RESULT:
-Thus the program is written to find the word count from the contents of a file using command line arguments.
+Thus the multivariate linear regression is implemented and predicted the output using python program.
