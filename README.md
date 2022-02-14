@@ -6,26 +6,33 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-Import pandas.
+Import pandas library.
 ### Step 2: 
  Import linear_modal from sklearn.
 ### Step 3: 
-Read the file using read_csv.
+Read the csv file using pandas library.
 ### Step 4:  
-Get the inputs from the user as x and y.
+Enter the parameters of the linear function.
 ### Step 5: 
-Use regr.fit(x,y) to et the output.
+print the parameters of the linear function.
 ### Step 6: 
-finish
+End the program.
 ## PROGRAM:
+```
 import pandas as pd
-df = pd.read_csv('data.csv')
-print(df.head(10))
-print(df.tail())
-print("No of rows",len(df.axes[0]))
-print("No of columns",len(df.axes[1]))
+from sklearn import linear_model
+df=pd.read_csv("cars.csv")
+X=df[['Weight','Volume']]
+Y=df['CO2']
+regr=linear_model.LinearRegression()
+regr.fit(X,Y)
+print('Coefficients:',regr.coef_)
+print("Intercept:",regr.intercept_)
+predictedCO2=regr.predict([[1995,522]])
+print("Predicted CO2 emission based on weight and volume:",predictedCO2)
+```
 ### OUTPUT:
-![gitlogo](data.png)
+![gitlogo](rohith.jpg)
 
 
 
